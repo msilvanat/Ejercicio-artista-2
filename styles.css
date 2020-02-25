@@ -1,0 +1,244 @@
+* {
+    box-sizing: content-box;
+    /* margin: 0;*/
+}
+
+
+body {
+    font-family:
+   'Sriracha', cursive;     
+    color: brown;
+    background-color: rgb(2, 10, 24);
+    margin: 0 ;
+}
+
+
+.navegacion {
+    /*width: 1000px;
+    margin: 30px auto; */
+    background: linear-gradient(50deg, rgba(112, 10, 10, 0.1), rgb(105, 30, 30), rgb(138, 4, 4));      ;
+    margin-bottom: 10px;
+}
+
+.navegacion {
+    position: fixed;
+    position:-webkit-sticky;
+    z-index:3; /*1000*/
+    top:0;
+    width:100%;
+    max-width:2000px;
+}
+
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu > li {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin: 0 15px 0 0;
+}
+
+
+ .menu > li > a {
+     display: block;
+     padding: 10px 15px;
+     color: white;
+     font-family: 'Siracha', cursive;
+     text-decoration: none;
+     font-size: 13px;
+ }
+
+ .menu li a:hover{
+     color: rosybrown;
+     transition: all .3s;
+ }
+
+ .submenu {
+     position: absolute;
+     background:black;
+     width: 120%;
+     visibility: hidden;
+     opacity: 0;
+     transition: opacity 1.5s;
+ }
+
+ .submenu li a {
+     display: block;
+     padding: 15px;
+     color: white;
+     font-family: 'Siracha', cursive;
+     text-decoration: none;
+     font-size: 13px;
+ }
+
+ .menu li:hover .submenu {
+     visibility: visible;
+     opacity: 1;
+ }
+
+.submenu {
+     position: absolute;
+     background:black;
+     width: 120%;
+     visibility: hidden;
+     opacity: 0;
+     transition: opacity 1.5s;
+ }
+
+ .submenu li a {
+     display: block;
+     padding: 15px;
+     color: white;
+     font-family: 'Siracha', cursive;
+     text-decoration: none;
+     font-size: 13px;
+ }
+
+ .menu li:hover .submenu {
+     visibility: visible;
+     opacity: 1;
+ }
+
+
+h1 {
+    color: cornsilk;
+    font-family: 'Dancing Script', cursive;
+    font-size: 65px;
+    text-align: center;
+   /* background-color: brown;
+    padding: 10px 50px;
+    border: 2px solid white; */
+}
+
+h2 {
+    background-color: brown;
+    color: white;
+    padding: 5px;
+}
+
+p {
+    font-family: 'Poiret One', cursive; 
+    font-size: 23px;
+    color: brown;
+    text-align: justify;
+}
+
+a {
+    color: lightblue;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.lista1 {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+.lista1 ol {
+    margin: 0 0 0 2em; 
+}
+
+.lista1 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+
+.lista1 li:hover{
+    background: #eee;
+}   
+
+.lista1 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lista1 li:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+.lista1 li:hover:after{
+    left: -.5em;
+    border-left-color: #fa8072;             
+}
+
+
+/* Eliminar subrayado del link, personalizar el color,
+distinto a los párrafos*/
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: blueviolet;
+    font-size: 20px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    background: brown;
+    color: #fff;
+ }
+ td, th {
+    background: #fff;
+    color: black;
+ }
+
+ .enmarcada{
+    border:5px solid brown; /* ancho - tipo - color */
+    padding:10px; /* distancia entre la img y el borde */
+    margin:5px; /* distancia entre el borde y el contenido */
+    width:30%;/* el ancho de la img */
+    height: 30% ;
+    display: block;
+    margin: auto;
+    }
+
+    .gif {
+        width:60%;/* el ancho de la img */
+        display: block;
+        margin: auto;
+        }
+
+        .boton {
+        position: fixed;
+        bottom: 10px;
+        right: 2%;
+        }
+        
+
